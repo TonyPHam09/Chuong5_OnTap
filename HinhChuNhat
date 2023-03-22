@@ -1,10 +1,10 @@
-package Bai2;
+package HinhHoc;
 
 public class HinhChuNhat extends Hinh{
-    private float cd;
-    private float cr;
+    public float cd;
+    public float cr;
 
-    public void HinhChuNhat(float cd, float cr){
+    public HinhChuNhat(float cd, float cr){
         this.cd = cd;
         this.cr = cr;
     }
@@ -12,7 +12,7 @@ public class HinhChuNhat extends Hinh{
         return "chieu dai: " + this.cd + " - chieu rong: " + this.cr;
     }
     public double dienTich(){
-        System.out.println("Dien tich");
-        return this.cd * this.cr;
+    	double dt = this.cd * this.cr;
+    	return dt;
     }
 }
