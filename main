@@ -1,5 +1,4 @@
-package Bai2;
-
+package HinhHoc;
 import java.util.Scanner;
 
 public class Test {
@@ -7,7 +6,7 @@ public class Test {
         Scanner input = new Scanner(System.in);
         System.out.println("nhap ban kinh: ");
         float r = input.nextFloat();
-        return new HinhTron();
+        return new HinhTron(r);
     }
     
     public static HinhChuNhat nhapHinhChuNhat(){
@@ -16,18 +15,15 @@ public class Test {
         float cd = input.nextFloat();
         System.out.println("nhap chieu rong: ");
         float cr = input.nextFloat();
-        return new HinhChuNhat();
+        return new HinhChuNhat(cd, cr);
     }
 
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         HinhChuNhat hcn = nhapHinhChuNhat();
+        System.out.println(hcn.toString());
+        System.out.println("Dien tich: "+hcn.dienTich());
         HinhTron htr = nhapHinhTron();
-        DanhSachHinh list = new DanhSachHinh();
-				hcn.toString();
-        hcn.dienTich();
-				htr.toString();
-        htr.dienTich();
-				list.Them();
-				list.InDanhSach();
+        System.out.println(htr.toString());
+        System.out.println("Dien tich: "+htr.dienTich());
     }
 }
