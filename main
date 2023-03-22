@@ -25,7 +25,8 @@ public class Test {
         DanhSachHinh list = new DanhSachHinh();
         hcn.dienTich();
         htr.dienTich();
-				list.them();
-				list.
+				list.Them();
+				list.InDanhSach();
+				
     }
 }
