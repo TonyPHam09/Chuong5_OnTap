@@ -1,0 +1,18 @@
+package Bai2;
+
+public class HinhTron extends Hinh{
+    private float r;
+
+    public void HinhTron(float r){
+        this.r = r;
+    }
+
+    public String toString(){
+        return "Ban kinh " + this.r;
+    }
+
+    public double dienTich(){
+        System.out.println("Dien tich");
+        return this.r * this.r * 3.14;
+    }
+}
