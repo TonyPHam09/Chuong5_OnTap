@@ -1,13 +1,16 @@
-package Bai2;
-
+package HinhHoc;
 import java.util.ArrayList;
 
 public class DanhSachHinh {
     private ArrayList<Hinh> listHinh;
 
-    public DanhSachHinh() {
+    public DanhSachHinh(ArrayList<Hinh> listHinh) {
         this.listHinh = new ArrayList<Hinh>();
-    } 
+    }
+    
+    public DanhSachHinh() {
+    	
+    }
 
     public void Them(Hinh listHinh){
         this.listHinh.add(listHinh);
