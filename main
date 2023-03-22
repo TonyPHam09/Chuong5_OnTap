@@ -1,1 +1,29 @@
+package Bai2;
 
+import java.util.Scanner;
+
+public class Test {
+    public static HinhTron nhapHinhTron(){
+        Scanner input = new Scanner(System.in);
+        System.out.println("nhap ban kinh: ");
+        float r = input.nextFloat();
+        return new HinhTron();
+    }
+    
+    public static HinhChuNhat nhapHinhChuNhat(){
+        Scanner input = new Scanner(System.in);
+        System.out.println("nhap chieu dai: ");
+        float cd = input.nextFloat();
+        System.out.println("nhap chieu rong: ");
+        float cr = input.nextFloat();
+        return new HinhChuNhat();
+    }
+
+    public static void main (String[] args) {
+        HinhChuNhat hcn = nhapHinhChuNhat();
+        HinhTron htr = nhapHinhTron();
+        DanhSachHinh list = new DanhSachHinh();
+        hcn.dienTich();
+        htr.dienTich();
+    }
+}
