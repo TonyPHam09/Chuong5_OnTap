@@ -1,0 +1,18 @@
+package Bai2;
+
+public class HinhChuNhat extends Hinh{
+    private float cd;
+    private float cr;
+
+    public void HinhChuNhat(float cd, float cr){
+        this.cd = cd;
+        this.cr = cr;
+    }
+    public String toString(){
+        return "chieu dai: " + this.cd + " - chieu rong: " + this.cr;
+    }
+    public double dienTich(){
+        System.out.println("Dien tich");
+        return this.cd * this.cr;
+    }
+}
