@@ -1,9 +1,10 @@
-package Bai2;
+package HinhHoc;
 
 public class HinhTron extends Hinh{
     private float r;
+    private double pi = 3.14;
 
-    public void HinhTron(float r){
+	public HinhTron(float r){
         this.r = r;
     }
 
@@ -12,7 +13,7 @@ public class HinhTron extends Hinh{
     }
 
     public double dienTich(){
-        System.out.println("Dien tich");
-        return this.r * this.r * 3.14;
+    	double dt = this.r * this.r * pi;
+        return dt;
     }
 }
