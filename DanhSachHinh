@@ -1,0 +1,21 @@
+package Bai2;
+
+import java.util.ArrayList;
+
+public class DanhSachHinh {
+    private ArrayList<Hinh> listHinh;
+
+    public DanhSachHinh() {
+        this.listHinh = new ArrayList<Hinh>();
+    } 
+
+    public void Them(Hinh listHinh){
+        this.listHinh.add(listHinh);
+    }
+
+    public void InDanhSach(){
+        for(Hinh Hinh : listHinh) {
+            System.out.println(Hinh);
+        }
+    }
+}
