@@ -23,10 +23,11 @@ public class Test {
         HinhChuNhat hcn = nhapHinhChuNhat();
         HinhTron htr = nhapHinhTron();
         DanhSachHinh list = new DanhSachHinh();
+				hcn.toString();
         hcn.dienTich();
+				htr.toString();
         htr.dienTich();
 				list.Them();
 				list.InDanhSach();
-				
     }
 }
