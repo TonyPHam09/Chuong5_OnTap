@@ -1,8 +1,8 @@
-package Bai2;
+package HinhHoc;
 
 public class Hinh {
     public double dienTich(){
         System.out.println("dien tich hinh hoc");
-        return 0;
+        return dienTich();
     }
 }
