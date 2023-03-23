@@ -1,0 +1,28 @@
+package bai3_QuanLyGiaoDich;
+
+public class GiaoDichVang extends GiaoDich{
+	private String loaiVang;
+	
+	public GiaoDichVang() {}
+
+	public GiaoDichVang(String loaiVang, String maGD, int ngayGD, float donGia, int soLuong) {
+		super();
+		this.loaiVang = loaiVang;
+	}
+
+	public String getLoaiVang() {
+		return loaiVang;
+	}
+
+	public void setLoaiVang(String loaiVang) {
+		this.loaiVang = loaiVang;
+	}
+	
+	public float thanhTien() {
+		return this.getDonGia() * this.getSoLuong();
+	}
+	
+	public String toString() {
+		return "thanh tien: " + thanhTien();
+	}
+}
