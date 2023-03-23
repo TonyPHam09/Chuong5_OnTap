@@ -1,0 +1,41 @@
+package bai3_QuanLyGiaoDich;
+
+public class GiaoDichTienTe extends GiaoDich{
+	private boolean loaiTienTe;
+	private float tiGia;
+	
+	public GiaoDichTienTe() {}
+
+	public GiaoDichTienTe(boolean loaiTienTe, float tiGia, String maGD, int ngayGD, float donGia, int soLuong) {
+		super();
+		this.loaiTienTe = loaiTienTe;
+	}
+
+	public boolean getLoaiTienTe() {
+		return loaiTienTe = true;
+	}
+
+	public void setLoaiTienTe(boolean loaiTienTe) {
+		this.loaiTienTe = loaiTienTe;
+	}
+	
+	public float getTiGia() {
+		return tiGia;
+	}
+	
+	public void setTiGia(float tiGia) {
+		this.tiGia = tiGia;
+	}
+	
+	public float thanhTien() {
+		if(getLoaiTienTe() == true) {
+			return this.getSoLuong() * this.getDonGia() * this.getTiGia(); 
+		}else {
+			return this.getSoLuong() * this.getDonGia() * this.getTiGia();
+		}
+	}
+	
+	public String toString() {
+		return "thanh tien: " + thanhTien();
+	}
+}
