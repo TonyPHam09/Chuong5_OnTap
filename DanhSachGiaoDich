@@ -1,0 +1,94 @@
+package bai3_QuanLyGiaoDich;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class DanhSachGiaoDich {
+	ArrayList<DanhSachGiaoDich> listGiaoDich;
+	Scanner input;
+	GiaoDich gd;
+	GiaoDichVang gdv;
+	GiaoDichTienTe gdt;
+	int a;
+	
+	public DanhSachGiaoDich() {
+		listGiaoDich = new ArrayList<DanhSachGiaoDich>();
+		input = new Scanner(System.in);
+	}
+	
+	public void nhap(int n) {
+		for(int i = 0; i < n; i++) {
+			System.out.println("1. Giao dich vang");
+			System.out.println("2. Giao dich tien te");
+			System.out.println("3. Thoat");
+			a = input.nextInt();input.nextInt();
+			switch(a) {
+			case 1:{
+				String maGD, loaiVang;
+				int ngayGD, soLuong;
+				float donGia, thanhTien;
+				
+				System.out.println("Nhap ma giao dich: ");
+				maGD = input.next();
+				System.out.println("Nhap loai vang: ");
+				loaiVang = input.next();
+				System.out.println("Nhap ngay giao dich: ");
+				ngayGD = input.nextInt();
+				System.out.println("Nhap so luong: ");
+				soLuong = input.nextInt();
+				System.out.println("Nhap don gia: ");
+				donGia = input.nextFloat();
+				System.out.println("Thanh tien: ");
+				gdv.thanhTien();
+				gd = new GiaoDichVang(loaiVang, maGD, ngayGD, donGia, soLuong);
+				listGiaoDich.add(null);
+				break;
+			}
+			case 2:{
+				String maGD;
+				boolean loaiTienTe = true;
+				int ngayGD, soLuong;
+				float donGia, thanhTien, tiGia = 20;
+				System.out.println("Nhap loai tien");
+				System.out.println("1. VND");
+				System.out.println("2. USD-EUR");
+				if(loaiTienTe == true) {
+					System.out.println("Nhap ma giao dich: ");
+					maGD = input.next();
+					System.out.println("Nhap ngay giao dich: ");
+					ngayGD = input.nextInt();
+					System.out.println("Nhap so luong: ");
+					soLuong = input.nextInt();
+					System.out.println("Nhap don gia: ");
+					donGia = input.nextFloat();
+					System.out.println("Thanh tien: ");
+					gdv.thanhTien();
+					gd = new GiaoDichTienTe(loaiTienTe, tiGia, maGD, ngayGD, donGia, soLuong);
+					listGiaoDich.add(null);
+				}else {
+					System.out.println("Nhap ma giao dich: ");
+					maGD = input.next();
+					System.out.println("Nhap ngay giao dich: ");
+					ngayGD = input.nextInt();
+					System.out.println("Nhap so luong: ");
+					soLuong = input.nextInt();
+					System.out.println("Nhap don gia: ");
+					donGia = input.nextFloat();
+					System.out.println("Thanh tien: ");
+					gdv.thanhTien();
+					gd = new GiaoDichTienTe(loaiTienTe, tiGia, maGD, ngayGD, donGia, soLuong);
+					listGiaoDich.add(null);
+				}
+			}
+			case 3:{
+				break;
+			}
+			}
+		}
+	}
+	public void xuat() {
+		for(DanhSachGiaoDich gd : listGiaoDich) {
+			System.out.println(gd.toString());
+		}
+	}
+}
