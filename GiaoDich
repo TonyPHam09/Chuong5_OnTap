@@ -43,3 +43,93 @@ public class GiaoDich {
 		return "GiaoDich [maGD=" + maGD + ", ngayGD=" + ngayGD + ", donGia=" + donGia + ", soLuong=" + soLuong + "]";
 	}
 }
+package bai3_QuanLyGiaoDich;
+
+public class GiaoDich {
+	private String maGD;
+	private int ngayGD, soLuong;
+	private float donGia;
+	public GiaoDich() {
+		super();
+	}
+	public GiaoDich(String maGD, int ngayGD, int donGia, int soLuong) {
+		super();
+		this.maGD = maGD;
+		this.ngayGD = ngayGD;
+		this.donGia = donGia;
+		this.soLuong = soLuong;
+	}
+	public String getMaGD() {
+		return maGD;
+	}
+	public void setMaGD(String maGD) {
+		this.maGD = maGD;
+	}
+	public int getNgayGD() {
+		return ngayGD;
+	}
+	public void setNgayGD(int ngayGD) {
+		this.ngayGD = ngayGD;
+	}
+	public float getDonGia() {
+		return donGia;
+	}
+	public void setDonGia(float donGia) {
+		this.donGia = donGia;
+	}
+	public int getSoLuong() {
+		return soLuong;
+	}
+	public void setSoLuong(int soLuong) {
+		this.soLuong = soLuong;
+	}
+	@Override
+	public String toString() {
+		return "GiaoDich [maGD=" + maGD + ", ngayGD=" + ngayGD + ", donGia=" + donGia + ", soLuong=" + soLuong + "]";
+	}
+}
+package bai3_QuanLyGiaoDich;
+
+public class GiaoDich {
+	private String maGD;
+	private int ngayGD, soLuong;
+	private float donGia;
+	public GiaoDich() {
+		super();
+	}
+	public GiaoDich(String maGD, int ngayGD, int donGia, int soLuong) {
+		super();
+		this.maGD = maGD;
+		this.ngayGD = ngayGD;
+		this.donGia = donGia;
+		this.soLuong = soLuong;
+	}
+	public String getMaGD() {
+		return maGD;
+	}
+	public void setMaGD(String maGD) {
+		this.maGD = maGD;
+	}
+	public int getNgayGD() {
+		return ngayGD;
+	}
+	public void setNgayGD(int ngayGD) {
+		this.ngayGD = ngayGD;
+	}
+	public float getDonGia() {
+		return donGia;
+	}
+	public void setDonGia(float donGia) {
+		this.donGia = donGia;
+	}
+	public int getSoLuong() {
+		return soLuong;
+	}
+	public void setSoLuong(int soLuong) {
+		this.soLuong = soLuong;
+	}
+	@Override
+	public String toString() {
+		return "GiaoDich [maGD=" + maGD + ", ngayGD=" + ngayGD + ", donGia=" + donGia + ", soLuong=" + soLuong + "]";
+	}
+}
