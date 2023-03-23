@@ -1,0 +1,9 @@
+package bai3_QuanLyGiaoDich;
+
+public class mainGiaoDich {
+	public static void main(String[] args) {
+		DanhSachGiaoDich dsgd = new DanhSachGiaoDich();
+		dsgd.nhap(10);
+		dsgd.xuat();
+	}
+}
